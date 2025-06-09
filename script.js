@@ -30,22 +30,22 @@ function setup() {
 
 function createControls() {
     const controlsHTML = `
-        <div style="position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.9); padding: 15px; border-radius: 8px; font-family: Arial, sans-serif;">
+        <div id="controls" style="position: ; background: rgba(255,255,255,0.9); padding: 15px; border-radius: 8px; font-family: Arial, sans-serif;">
             <h3 style="margin-top: 0;">Double Pendulum Simulation</h3>
             <div style="margin-bottom: 10px;">
-                <label>Length 1: <span id="length1Display">${len1}</span>px</label><br>
+                <label id="l1">Length 1: <span id="length1Display">${len1}</span>px</label><br>
                 <input type="range" id="length1Slider" min="50" max="250" value="${len1}" style="width: 200px;">
             </div>
             <div style="margin-bottom: 10px;">
-                <label>Length 2: <span id="length2Display">${len2}</span>px</label><br>
+                <label id="l2">Length 2: <span id="length2Display">${len2}</span>px</label><br>
                 <input type="range" id="length2Slider" min="50" max="250" value="${len2}" style="width: 200px;">
             </div>
             <div style="margin-bottom: 10px;">
-                <label>Mass 1: <span id="mass1Display">${mass1}</span></label><br>
+                <label id="m1">Mass 1: <span id="mass1Display">${mass1}</span></label><br>
                 <input type="range" id="mass1Slider" min="10" max="50" value="${mass1}" style="width: 200px;">
             </div>
             <div style="margin-bottom: 10px;">
-                <label>Mass 2: <span id="mass2Display">${mass2}</span></label><br>
+                <label id="m2">Mass 2: <span id="mass2Display">${mass2}</span></label><br>
                 <input type="range" id="mass2Slider" min="10" max="50" value="${mass2}" style="width: 200px;">
             </div>
             <div style="margin-bottom: 10px;">
