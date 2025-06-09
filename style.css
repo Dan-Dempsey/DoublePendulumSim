@@ -1,0 +1,12 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#canvas {
+    border: 5px solid black;
+    display: inline;
+    margin: 50px auto 0;
+    background: content-box radial-gradient(#e4c249, #d56cc7);
+    cursor: pointer;
+}
