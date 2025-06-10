@@ -202,6 +202,9 @@ canvas.addEventListener('mousedown', function(e) {
     const mouseX = e.clientX - rect.left;
     const mouseY = e.clientY - rect.top;
 
+            let bob1X = origin.x + len1 * Math.sin(theta1);
+        let bob1Y = origin.y + len1 * Math.cos(theta1);
+
     // Check which bob is clicked
     const dist1 = Math.sqrt((mouseX - bob1X) ** 2 + (mouseY - bob1Y) ** 2);
     const dist2 = Math.sqrt((mouseX - bob2X) ** 2 + (mouseY - bob2Y) ** 2);
