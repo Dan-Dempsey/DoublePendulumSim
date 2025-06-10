@@ -231,6 +231,8 @@ function dragPendulum(e) {
         angularVel1 = 0;
     } else if (dragBob === 2) {
         //drag second bob relative to first bob
+        let bob1X = origin.x + len1 * Math.sin(theta1);
+        let bob1Y = origin.y + len1 * Math.cos(theta1);
         const distX = mouseX - bob1X;
         const distY = mouseY - bob1Y;
         theta2 = Math.atan2(distX, distY);
