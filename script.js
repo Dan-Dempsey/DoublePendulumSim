@@ -113,7 +113,6 @@ function animate() {
         const M1 = mass1;
         const M2 = mass2;
 
-        // Simplified equations for better stability
         const delta = theta2 - theta1;
         const den1 = (M1 + M2) * L1 - M2 * L1 * Math.cos(delta) * Math.cos(delta);
         const den2 = (L2 / L1) * den1;
