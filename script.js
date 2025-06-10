@@ -144,10 +144,10 @@ function animate() {
     }
 
     // Calculate positions
-    let bob1X = origin.x + len1 * Math.sin(theta1);
-    let bob1Y = origin.y + len1 * Math.cos(theta1);
-    let bob2X = bob1X + len2 * Math.sin(theta2);
-    let bob2Y = bob1Y + len2 * Math.cos(theta2);
+    var bob1X = origin.x + len1 * Math.sin(theta1);
+    var bob1Y = origin.y + len1 * Math.cos(theta1);
+    var bob2X = bob1X + len2 * Math.sin(theta2);
+    var bob2Y = bob1Y + len2 * Math.cos(theta2);
 
     // Draw first string
     ctx.beginPath();
