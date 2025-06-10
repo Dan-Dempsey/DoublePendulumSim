@@ -202,12 +202,6 @@ canvas.addEventListener('mousedown', function(e) {
     const mouseX = e.clientX - rect.left;
     const mouseY = e.clientY - rect.top;
 
-    // // Calculate current bob positions
-    // let bob1X = origin.x + len1 * Math.sin(theta1);
-    // let bob1Y = origin.y + len1 * Math.cos(theta1);
-    // let bob2X = bob1X + len2 * Math.sin(theta2);
-    // let bob2Y = bob1Y + len2 * Math.cos(theta2);
-
     // Check which bob is clicked
     const dist1 = Math.sqrt((mouseX - bob1X) ** 2 + (mouseY - bob1Y) ** 2);
     const dist2 = Math.sqrt((mouseX - bob2X) ** 2 + (mouseY - bob2Y) ** 2);
